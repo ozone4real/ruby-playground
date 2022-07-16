@@ -1,0 +1,139 @@
+require "openssl"
+require "byebug"
+
+root_key = OpenSSL::PKey::RSA.new 2048 # the CA's public/private key
+byebug
+root_ca = OpenSSL::X509::Certificate.new
+root_ca.version = 2 # cf. RFC 5280 - to make it a "v3" certificate
+root_ca.serial = 1
+root_ca.subject = OpenSSL::X509::Name.parse "/DC=org/DC=ruby-lang/CN=Ruby CA"
+root_ca.issuer = root_ca.subject # root CA's are "self-signed"
+root_ca.public_key = root_key.public_key
+root_ca.not_before = Time.now
+root_ca.not_after = root_ca.not_before + 2 * 365 * 24 * 60 * 60 # 2 years validity
+ef = OpenSSL::X509::ExtensionFactory.new
+ef.subject_certificate = root_ca
+ef.issuer_certificate = root_ca
+root_ca.add_extension(ef.create_extension("basicConstraints","CA:TRUE",true))
+root_ca.add_extension(ef.create_extension("keyUsage","keyCertSign, cRLSign", true))
+root_ca.add_extension(ef.create_extension("subjectKeyIdentifier","hash",false))
+root_ca.add_extension(ef.create_extension("authorityKeyIdentifier","keyid:always",false))
+root_ca.sign(root_key, OpenSSL::Digest::SHA256.new)
+
+byebug
+
+
+key = OpenSSL::PKey::RSA.new 2048
+byebug
+cert = OpenSSL::X509::Certificate.new
+cert.version = 2
+cert.serial = 2
+cert.subject = OpenSSL::X509::Name.parse "/DC=org/DC=ruby-lang/CN=Ruby certificate"
+cert.issuer = root_ca.subject # root CA is the issuer
+cert.public_key = key.public_key
+cert.not_before = Time.now
+cert.not_after = cert.not_before + 1 * 365 * 24 * 60 * 60 # 1 years validity
+ef = OpenSSL::X509::ExtensionFactory.new
+ef.subject_certificate = cert
+ef.issuer_certificate = root_ca
+cert.add_extension(ef.create_extension("keyUsage","digitalSignature", true))
+cert.add_extension(ef.create_extension("subjectKeyIdentifier","hash",false))
+cert.sign(root_key, OpenSSL::Digest::SHA256.new)
+
+byebug
+
+
+API key:
+2Q16949VTQmYojE--6n2wg
+
+Certificate:
+-----BEGIN CERTIFICATE-----
+MIIGGDCCBACgAwIBAgICEA4wDQYJKoZIhvcNAQELBQAwezELMAkGA1UEBhMCVVMx
+EzARBgNVBAgMCkNhbGlmb3JuaWExGDAWBgNVBAoMD1Job21idXMgU3lzdGVtczEV
+MBMGA1UECwwMRXh0ZXJuYWwgQVBJMSYwJAYDVQQDDB1BUEkgQ2xpZW50IEludGVy
+bmV0IEF1dGhvcml0eTAeFw0yMDA0MjgxMzU2MTVaFw0zMDA0MjYxMzU2MTVaMF0x
+CzAJBgNVBAYTAlVTMREwDwYDVQQIDAhOZXcgWW9yazERMA8GA1UEBwwIQnJvb2ts
+eW4xDTALBgNVBAoMBEtpc2kxGTAXBgNVBAMMEHRlc3QuZ2V0a2lzaS5jb20wggIi
+MA0GCSqGSIb3DQEBAQUAA4ICDwAwggIKAoICAQCrTHV57laSOJFkxglKKVB7Co1D
+NHOHlh+WpzihFrjQI36hifAMyXY+RJ0kbEze8PjjFxbbnEtZrhq7IIosT1lB6xyE
+2nP2n/2rAF629dZGPQSroRDmV0KGzbI0gFiMhiADzsDoJK5w4EZeBIfpzPyRfeab
+CNzr+HZ6tKNeXoKhElBskHadVUnGaELwRpxB3Qj8VLQC5/8ymPO2nU2j2M+PahpL
+XyaJHg97YOntJTsIVrxFyuNouJFShwJ4Ee/3htrpG+qCYCGk0JVtFOFfK5bGYwkC
+mwrYRK8bRjIpT0zvvCqXugnVYQTeGlZoSn1jJAG9kKyPzhLX+76EFl5paBEgG1mj
+4/JQiSL29btWb4VKkurkC2CDDcWlcNByiJsHMpZ2/ZCkFNYT1sUJiY+K3nAkLXgJ
+WZk2FoiLLcgSl8IMPpzPA5xugW+5jbovUgVpxPV8ejmJjnfsNBVEavKh+bbeWNpH
+2e2lDh3Gmmum0HIR/U7pjZMtNv/Y97ZBO+V9CSCLcpXGcPHOlshhtwptpk+QGDtZ
+0kjppv/gbqmbEce0lgP4Y4fk+PoOlOZFZr2i2ttyhnJB/Kbtq2LhgzrxQXKG+7pS
+FrzwyawGC2xA1Gw/79PpPwPYze53PlyoAeBQBtr20kMjz2oQCTvuO3VVkxYk9BAi
+nfwiiUyCEmF4cv6bwQIDAQABo4HDMIHAMB0GA1UdDgQWBBQwtbGv8wgFTpfLjn7F
+mhU3jlSR5zAfBgNVHSMEGDAWgBQxXcbvHlYjtz2jIqAgqknIdkNMHjAJBgNVHRME
+AjAAMAsGA1UdDwQEAwIFoDATBgNVHSUEDDAKBggrBgEFBQcDAjBRBgNVHR8ESjBI
+MEagRKBChkBodHRwOi8vY3JsLnJob21idXNzeXN0ZW1zLmNvbS9yaG9tYnVzX2Fw
+aV9pbnRlcm5ldF9hdXRob3JpdHkuY3JsMA0GCSqGSIb3DQEBCwUAA4ICAQB3p79R
+Elfg6EqOsbeo97UfAZ5rM265rLampxLY+f6VvE4mSBTt/UXKF5lGD04Pl8kD8FBR
+LHKvI8u5yIJY9s6pzYIoKmMsOeTqQO0kPAfpRzoHhFBg0Gm93UTRFIHw7tYMcQ7b
+UbgvpGUcK+MkPm4vAFfZcR1kuOGSvrYY15Gf/WdpVdHiDTuAQrAGnFMaULnwrkJA
+nEfw3xTNmL4fUjACsEs27lgZvQUEZlOALvL2Ms3Iub4Y6psg119j5KIcHGZROtuO
+tDM8z1rZZmSQpZyT2O/u8YuME1hgBatOJgh6CPdRXyTJoU49F+8YhB1kGdY3bDaj
+PFRNk1p4cI1FDoDV8hm7sPSN4afHmz9dvI1qiAh9HxK1Fpoo9iWuFRe4ohv02fVT
+j1C4YIydIcZscJgukqZnLhy7P2bD3txGzfXN20GiOC0aBV/JbDeuVHrCtoJdpEwC
+Ac2QFsbr8lQJaSoBmPhmlSBNZ9XHviaBRIR+GDskUf35oVBjEtlviQ47UpVXmkcQ
+V47DtyOdALQ7zp4RH5+VhXi0SB2YvcqUWSh9SpELjxmqLbkloyAo9RIXQNlj3Yng
+QZktyRRfIEKE6uPtOumwELliIYb0GxSuDm9vnxv31IpAAQFefKEXKCQAjKLSXhRu
+3NPi2ob+r506uVtuEABwtnaRzSIhQDiAkp6XDA==
+-----END CERTIFICATE-----
+
+Private key:
+-----BEGIN PRIVATE KEY-----
+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
+dg42eksGZLu5/LakY/k7nT7SxAJ13A==
+-----END PRIVATE KEY-----
+puts "jjd"

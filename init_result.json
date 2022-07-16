@@ -1,0 +1,1127 @@
+[
+  {
+    "name": "load_environment_config",
+    "before": "load_environment_hook",
+    "after": null
+  },
+  {
+    "name": "load_environment_config",
+    "before": "load_environment_hook",
+    "after": null
+  },
+  {
+    "name": "load_environment_config",
+    "before": "load_environment_hook",
+    "after": null
+  },
+  {
+    "name": "load_environment_config",
+    "before": "load_environment_hook",
+    "after": null
+  },
+  {
+    "name": "load_environment_config",
+    "before": "load_environment_hook",
+    "after": null
+  },
+  {
+    "name": "load_environment_config",
+    "before": "load_environment_hook",
+    "after": null
+  },
+  {
+    "name": "load_environment_config",
+    "before": "load_environment_hook",
+    "after": null
+  },
+  {
+    "name": "load_environment_config",
+    "before": "load_environment_hook",
+    "after": null
+  },
+  {
+    "name": "load_environment_config",
+    "before": "load_environment_hook",
+    "after": null
+  },
+  {
+    "name": "load_environment_config",
+    "before": "load_environment_hook",
+    "after": null
+  },
+  {
+    "name": "load_environment_hook",
+    "before": null,
+    "after": null
+  },
+  {
+    "name": "load_active_support",
+    "before": null,
+    "after": "load_environment_hook"
+  },
+  {
+    "name": "set_eager_load",
+    "before": null,
+    "after": "load_active_support"
+  },
+  {
+    "name": "initialize_logger",
+    "before": null,
+    "after": "set_eager_load"
+  },
+  {
+    "name": "initialize_cache",
+    "before": null,
+    "after": "initialize_logger"
+  },
+  {
+    "name": "initialize_dependency_mechanism",
+    "before": null,
+    "after": "initialize_cache"
+  },
+  {
+    "name": "set_load_path",
+    "before": "bootstrap_hook",
+    "after": "load_environment_config"
+  },
+  {
+    "name": "set_load_path",
+    "before": "bootstrap_hook",
+    "after": "load_environment_config"
+  },
+  {
+    "name": "set_load_path",
+    "before": "bootstrap_hook",
+    "after": "load_environment_config"
+  },
+  {
+    "name": "set_load_path",
+    "before": "bootstrap_hook",
+    "after": "load_environment_config"
+  },
+  {
+    "name": "set_load_path",
+    "before": "bootstrap_hook",
+    "after": "load_environment_config"
+  },
+  {
+    "name": "set_load_path",
+    "before": "bootstrap_hook",
+    "after": "load_environment_config"
+  },
+  {
+    "name": "set_load_path",
+    "before": "bootstrap_hook",
+    "after": "load_environment_config"
+  },
+  {
+    "name": "set_load_path",
+    "before": "bootstrap_hook",
+    "after": "load_environment_config"
+  },
+  {
+    "name": "set_load_path",
+    "before": "bootstrap_hook",
+    "after": "load_environment_config"
+  },
+  {
+    "name": "set_load_path",
+    "before": "bootstrap_hook",
+    "after": "load_environment_config"
+  },
+  {
+    "name": "set_autoload_paths",
+    "before": "bootstrap_hook",
+    "after": "set_load_path"
+  },
+  {
+    "name": "set_autoload_paths",
+    "before": "bootstrap_hook",
+    "after": "set_load_path"
+  },
+  {
+    "name": "set_autoload_paths",
+    "before": "bootstrap_hook",
+    "after": "set_load_path"
+  },
+  {
+    "name": "set_autoload_paths",
+    "before": "bootstrap_hook",
+    "after": "set_load_path"
+  },
+  {
+    "name": "set_autoload_paths",
+    "before": "bootstrap_hook",
+    "after": "set_load_path"
+  },
+  {
+    "name": "set_autoload_paths",
+    "before": "bootstrap_hook",
+    "after": "set_load_path"
+  },
+  {
+    "name": "set_autoload_paths",
+    "before": "bootstrap_hook",
+    "after": "set_load_path"
+  },
+  {
+    "name": "set_autoload_paths",
+    "before": "bootstrap_hook",
+    "after": "set_load_path"
+  },
+  {
+    "name": "set_autoload_paths",
+    "before": "bootstrap_hook",
+    "after": "set_load_path"
+  },
+  {
+    "name": "set_autoload_paths",
+    "before": "bootstrap_hook",
+    "after": "set_load_path"
+  },
+  {
+    "name": "set_eager_load_paths",
+    "before": "bootstrap_hook",
+    "after": "set_autoload_paths"
+  },
+  {
+    "name": "set_eager_load_paths",
+    "before": "bootstrap_hook",
+    "after": "set_autoload_paths"
+  },
+  {
+    "name": "set_eager_load_paths",
+    "before": "bootstrap_hook",
+    "after": "set_autoload_paths"
+  },
+  {
+    "name": "set_eager_load_paths",
+    "before": "bootstrap_hook",
+    "after": "set_autoload_paths"
+  },
+  {
+    "name": "set_eager_load_paths",
+    "before": "bootstrap_hook",
+    "after": "set_autoload_paths"
+  },
+  {
+    "name": "set_eager_load_paths",
+    "before": "bootstrap_hook",
+    "after": "set_autoload_paths"
+  },
+  {
+    "name": "set_eager_load_paths",
+    "before": "bootstrap_hook",
+    "after": "set_autoload_paths"
+  },
+  {
+    "name": "set_eager_load_paths",
+    "before": "bootstrap_hook",
+    "after": "set_autoload_paths"
+  },
+  {
+    "name": "set_eager_load_paths",
+    "before": "bootstrap_hook",
+    "after": "set_autoload_paths"
+  },
+  {
+    "name": "set_eager_load_paths",
+    "before": "bootstrap_hook",
+    "after": "set_autoload_paths"
+  },
+  {
+    "name": "bootstrap_hook",
+    "before": null,
+    "after": "initialize_dependency_mechanism"
+  },
+  {
+    "name": "set_secrets_root",
+    "before": null,
+    "after": "bootstrap_hook"
+  },
+  {
+    "name": "active_support.set_authenticated_message_encryption",
+    "before": null,
+    "after": null
+  },
+  {
+    "name": "active_support.reset_all_current_attributes_instances",
+    "before": null,
+    "after": "active_support.set_authenticated_message_encryption"
+  },
+  {
+    "name": "active_support.deprecation_behavior",
+    "before": null,
+    "after": "active_support.reset_all_current_attributes_instances"
+  },
+  {
+    "name": "active_support.initialize_time_zone",
+    "before": null,
+    "after": "active_support.deprecation_behavior"
+  },
+  {
+    "name": "active_support.initialize_beginning_of_week",
+    "before": null,
+    "after": "active_support.initialize_time_zone"
+  },
+  {
+    "name": "active_support.require_master_key",
+    "before": null,
+    "after": "active_support.initialize_beginning_of_week"
+  },
+  {
+    "name": "active_support.set_configs",
+    "before": null,
+    "after": "active_support.require_master_key"
+  },
+  {
+    "name": "active_support.set_hash_digest_class",
+    "before": null,
+    "after": "active_support.set_configs"
+  },
+  {
+    "name": "action_dispatch.configure",
+    "before": null,
+    "after": null
+  },
+  {
+    "name": "active_model.secure_password",
+    "before": null,
+    "after": null
+  },
+  {
+    "name": "active_model.i18n_customize_full_message",
+    "before": null,
+    "after": "active_model.secure_password"
+  },
+  {
+    "name": "global_id",
+    "before": null,
+    "after": null
+  },
+  {
+    "name": "active_job.logger",
+    "before": null,
+    "after": null
+  },
+  {
+    "name": "active_job.custom_serializers",
+    "before": null,
+    "after": "active_job.logger"
+  },
+  {
+    "name": "active_job.set_configs",
+    "before": null,
+    "after": "active_job.custom_serializers"
+  },
+  {
+    "name": "active_job.set_reloader_hook",
+    "before": null,
+    "after": "active_job.set_configs"
+  },
+  {
+    "name": "action_controller.assets_config",
+    "before": null,
+    "after": null
+  },
+  {
+    "name": "action_controller.set_helpers_path",
+    "before": null,
+    "after": "action_controller.assets_config"
+  },
+  {
+    "name": "action_controller.parameters_config",
+    "before": null,
+    "after": "action_controller.set_helpers_path"
+  },
+  {
+    "name": "action_controller.set_configs",
+    "before": null,
+    "after": "action_controller.parameters_config"
+  },
+  {
+    "name": "action_controller.compile_config_methods",
+    "before": null,
+    "after": "action_controller.set_configs"
+  },
+  {
+    "name": "action_controller.request_forgery_protection",
+    "before": null,
+    "after": "action_controller.compile_config_methods"
+  },
+  {
+    "name": "action_controller.eager_load_actions",
+    "before": null,
+    "after": "action_controller.request_forgery_protection"
+  },
+  {
+    "name": "active_record.initialize_timezone",
+    "before": null,
+    "after": null
+  },
+  {
+    "name": "active_record.logger",
+    "before": null,
+    "after": "active_record.initialize_timezone"
+  },
+  {
+    "name": "active_record.backtrace_cleaner",
+    "before": null,
+    "after": "active_record.logger"
+  },
+  {
+    "name": "active_record.migration_error",
+    "before": null,
+    "after": "active_record.backtrace_cleaner"
+  },
+  {
+    "name": "active_record.database_selector",
+    "before": null,
+    "after": "active_record.migration_error"
+  },
+  {
+    "name": "Check for cache versioning support",
+    "before": null,
+    "after": "active_record.database_selector"
+  },
+  {
+    "name": "active_record.check_schema_cache_dump",
+    "before": null,
+    "after": "Check for cache versioning support"
+  },
+  {
+    "name": "active_record.define_attribute_methods",
+    "before": null,
+    "after": "active_record.check_schema_cache_dump"
+  },
+  {
+    "name": "active_record.warn_on_records_fetched_greater_than",
+    "before": null,
+    "after": "active_record.define_attribute_methods"
+  },
+  {
+    "name": "active_record.set_configs",
+    "before": null,
+    "after": "active_record.warn_on_records_fetched_greater_than"
+  },
+  {
+    "name": "active_record.initialize_database",
+    "before": null,
+    "after": "active_record.set_configs"
+  },
+  {
+    "name": "active_record.log_runtime",
+    "before": null,
+    "after": "active_record.initialize_database"
+  },
+  {
+    "name": "active_record.set_reloader_hooks",
+    "before": null,
+    "after": "active_record.log_runtime"
+  },
+  {
+    "name": "active_record.set_executor_hooks",
+    "before": null,
+    "after": "active_record.set_reloader_hooks"
+  },
+  {
+    "name": "active_record.add_watchable_files",
+    "before": null,
+    "after": "active_record.set_executor_hooks"
+  },
+  {
+    "name": "active_record.clear_active_connections",
+    "before": null,
+    "after": "active_record.add_watchable_files"
+  },
+  {
+    "name": "active_record.set_filter_attributes",
+    "before": null,
+    "after": "active_record.clear_active_connections"
+  },
+  {
+    "name": "active_record.set_signed_id_verifier_secret",
+    "before": null,
+    "after": "active_record.set_filter_attributes"
+  },
+  {
+    "name": "action_mailer.logger",
+    "before": null,
+    "after": null
+  },
+  {
+    "name": "action_mailer.set_configs",
+    "before": null,
+    "after": "action_mailer.logger"
+  },
+  {
+    "name": "action_mailer.set_autoload_paths",
+    "before": null,
+    "after": "action_mailer.set_configs"
+  },
+  {
+    "name": "action_mailer.compile_config_methods",
+    "before": null,
+    "after": "action_mailer.set_autoload_paths"
+  },
+  {
+    "name": "action_mailer.eager_load_actions",
+    "before": null,
+    "after": "action_mailer.compile_config_methods"
+  },
+  {
+    "name": "set_default_precompile",
+    "before": null,
+    "after": null
+  },
+  {
+    "name": "quiet_assets",
+    "before": null,
+    "after": "set_default_precompile"
+  },
+  {
+    "name": "asset_url_processor",
+    "before": null,
+    "after": "quiet_assets"
+  },
+  {
+    "name": "asset_sourcemap_url_processor",
+    "before": null,
+    "after": "asset_url_processor"
+  },
+  {
+    "name": "test_unit.line_filtering",
+    "before": null,
+    "after": null
+  },
+  {
+    "name": "kaminari",
+    "before": null,
+    "after": null
+  },
+  {
+    "name": "responders.flash_responder",
+    "before": null,
+    "after": null
+  },
+  {
+    "name": "barnes",
+    "before": null,
+    "after": null
+  },
+  {
+    "name": "elasticsearch.instrumentation",
+    "before": null,
+    "after": null
+  },
+  {
+    "name": "flipper.identifier",
+    "before": null,
+    "after": null
+  },
+  {
+    "name": "flipper.default",
+    "before": "load_config_initializers",
+    "after": "flipper.identifier"
+  },
+  {
+    "name": "geocoder.insert_into_active_record",
+    "before": "load_config_initializers",
+    "after": null
+  },
+  {
+    "name": "paper_trail",
+    "before": "load_config_initializers",
+    "after": null
+  },
+  {
+    "name": "add_routing_paths",
+    "before": null,
+    "after": "set_eager_load_paths"
+  },
+  {
+    "name": "add_routing_paths",
+    "before": null,
+    "after": "set_eager_load_paths"
+  },
+  {
+    "name": "add_routing_paths",
+    "before": null,
+    "after": "set_eager_load_paths"
+  },
+  {
+    "name": "add_routing_paths",
+    "before": null,
+    "after": "set_eager_load_paths"
+  },
+  {
+    "name": "add_routing_paths",
+    "before": null,
+    "after": "set_eager_load_paths"
+  },
+  {
+    "name": "add_routing_paths",
+    "before": null,
+    "after": "set_eager_load_paths"
+  },
+  {
+    "name": "add_routing_paths",
+    "before": null,
+    "after": "set_eager_load_paths"
+  },
+  {
+    "name": "add_routing_paths",
+    "before": null,
+    "after": "set_eager_load_paths"
+  },
+  {
+    "name": "add_routing_paths",
+    "before": null,
+    "after": "set_eager_load_paths"
+  },
+  {
+    "name": "add_routing_paths",
+    "before": null,
+    "after": "set_eager_load_paths"
+  },
+  {
+    "name": "add_locales",
+    "before": null,
+    "after": "add_routing_paths"
+  },
+  {
+    "name": "add_locales",
+    "before": null,
+    "after": "add_routing_paths"
+  },
+  {
+    "name": "add_locales",
+    "before": null,
+    "after": "add_routing_paths"
+  },
+  {
+    "name": "add_locales",
+    "before": null,
+    "after": "add_routing_paths"
+  },
+  {
+    "name": "add_locales",
+    "before": null,
+    "after": "add_routing_paths"
+  },
+  {
+    "name": "add_locales",
+    "before": null,
+    "after": "add_routing_paths"
+  },
+  {
+    "name": "add_locales",
+    "before": null,
+    "after": "add_routing_paths"
+  },
+  {
+    "name": "add_locales",
+    "before": null,
+    "after": "add_routing_paths"
+  },
+  {
+    "name": "add_locales",
+    "before": null,
+    "after": "add_routing_paths"
+  },
+  {
+    "name": "add_locales",
+    "before": null,
+    "after": "add_routing_paths"
+  },
+  {
+    "name": "add_view_paths",
+    "before": null,
+    "after": "add_locales"
+  },
+  {
+    "name": "add_view_paths",
+    "before": null,
+    "after": "add_locales"
+  },
+  {
+    "name": "add_view_paths",
+    "before": null,
+    "after": "add_locales"
+  },
+  {
+    "name": "add_view_paths",
+    "before": null,
+    "after": "add_locales"
+  },
+  {
+    "name": "add_view_paths",
+    "before": null,
+    "after": "add_locales"
+  },
+  {
+    "name": "add_view_paths",
+    "before": null,
+    "after": "add_locales"
+  },
+  {
+    "name": "add_view_paths",
+    "before": null,
+    "after": "add_locales"
+  },
+  {
+    "name": "add_view_paths",
+    "before": null,
+    "after": "add_locales"
+  },
+  {
+    "name": "add_view_paths",
+    "before": null,
+    "after": "add_locales"
+  },
+  {
+    "name": "add_view_paths",
+    "before": null,
+    "after": "add_locales"
+  },
+  {
+    "name": "prepend_helpers_path",
+    "before": null,
+    "after": "add_view_paths"
+  },
+  {
+    "name": "prepend_helpers_path",
+    "before": null,
+    "after": "add_view_paths"
+  },
+  {
+    "name": "prepend_helpers_path",
+    "before": null,
+    "after": "add_view_paths"
+  },
+  {
+    "name": "prepend_helpers_path",
+    "before": null,
+    "after": "add_view_paths"
+  },
+  {
+    "name": "prepend_helpers_path",
+    "before": null,
+    "after": "add_view_paths"
+  },
+  {
+    "name": "prepend_helpers_path",
+    "before": null,
+    "after": "add_view_paths"
+  },
+  {
+    "name": "prepend_helpers_path",
+    "before": null,
+    "after": "add_view_paths"
+  },
+  {
+    "name": "active_admin.load_app_path",
+    "before": "load_config_initializers",
+    "after": null
+  },
+  {
+    "name": "prepend_helpers_path",
+    "before": null,
+    "after": "add_view_paths"
+  },
+  {
+    "name": "prepend_helpers_path",
+    "before": null,
+    "after": "add_view_paths"
+  },
+  {
+    "name": "prepend_helpers_path",
+    "before": null,
+    "after": "add_view_paths"
+  },
+  {
+    "name": "load_config_initializers",
+    "before": null,
+    "after": "prepend_helpers_path"
+  },
+  {
+    "name": "load_config_initializers",
+    "before": null,
+    "after": "prepend_helpers_path"
+  },
+  {
+    "name": "load_config_initializers",
+    "before": null,
+    "after": "prepend_helpers_path"
+  },
+  {
+    "name": "load_config_initializers",
+    "before": null,
+    "after": "prepend_helpers_path"
+  },
+  {
+    "name": "load_config_initializers",
+    "before": null,
+    "after": "prepend_helpers_path"
+  },
+  {
+    "name": "load_config_initializers",
+    "before": null,
+    "after": "prepend_helpers_path"
+  },
+  {
+    "name": "load_config_initializers",
+    "before": null,
+    "after": "prepend_helpers_path"
+  },
+  {
+    "name": "load_config_initializers",
+    "before": null,
+    "after": "prepend_helpers_path"
+  },
+  {
+    "name": "load_config_initializers",
+    "before": null,
+    "after": "prepend_helpers_path"
+  },
+  {
+    "name": "load_config_initializers",
+    "before": null,
+    "after": "prepend_helpers_path"
+  },
+  {
+    "name": "flipper.log",
+    "before": null,
+    "after": "load_config_initializers"
+  },
+  {
+    "name": "flipper.memoizer",
+    "before": null,
+    "after": "load_config_initializers"
+  },
+  {
+    "name": "jbuilder",
+    "before": null,
+    "after": null
+  },
+  {
+    "name": "mjml-rails.register_template_handler",
+    "before": null,
+    "after": null
+  },
+  {
+    "name": "omniauth-rails_csrf_protection.initialize",
+    "before": null,
+    "after": null
+  },
+  {
+    "name": "request_store.insert_middleware",
+    "before": null,
+    "after": null
+  },
+  {
+    "name": "setup_sass",
+    "before": null,
+    "after": null
+  },
+  {
+    "name": "setup_compression",
+    "before": null,
+    "after": "setup_sass"
+  },
+  {
+    "name": "sentry.use_rack_middleware",
+    "before": null,
+    "after": null
+  },
+  {
+    "name": "sentry.extend_active_job",
+    "before": "eager_load!",
+    "after": "sentry.use_rack_middleware"
+  },
+  {
+    "name": "sentry.extend_action_cable",
+    "before": "eager_load!",
+    "after": "sentry.extend_active_job"
+  },
+  {
+    "name": "wrap_executor_around_load_seed",
+    "before": null,
+    "after": "load_config_initializers"
+  },
+  {
+    "name": "wrap_executor_around_load_seed",
+    "before": null,
+    "after": "load_config_initializers"
+  },
+  {
+    "name": "wrap_executor_around_load_seed",
+    "before": null,
+    "after": "load_config_initializers"
+  },
+  {
+    "name": "wrap_executor_around_load_seed",
+    "before": null,
+    "after": "load_config_initializers"
+  },
+  {
+    "name": "wrap_executor_around_load_seed",
+    "before": null,
+    "after": "load_config_initializers"
+  },
+  {
+    "name": "wrap_executor_around_load_seed",
+    "before": null,
+    "after": "load_config_initializers"
+  },
+  {
+    "name": "wrap_executor_around_load_seed",
+    "before": null,
+    "after": "load_config_initializers"
+  },
+  {
+    "name": "wrap_executor_around_load_seed",
+    "before": null,
+    "after": "load_config_initializers"
+  },
+  {
+    "name": "wrap_executor_around_load_seed",
+    "before": null,
+    "after": "load_config_initializers"
+  },
+  {
+    "name": "wrap_executor_around_load_seed",
+    "before": null,
+    "after": "load_config_initializers"
+  },
+  {
+    "name": "engines_blank_point",
+    "before": null,
+    "after": "wrap_executor_around_load_seed"
+  },
+  {
+    "name": "engines_blank_point",
+    "before": null,
+    "after": "wrap_executor_around_load_seed"
+  },
+  {
+    "name": "engines_blank_point",
+    "before": null,
+    "after": "wrap_executor_around_load_seed"
+  },
+  {
+    "name": "engines_blank_point",
+    "before": null,
+    "after": "wrap_executor_around_load_seed"
+  },
+  {
+    "name": "engines_blank_point",
+    "before": null,
+    "after": "wrap_executor_around_load_seed"
+  },
+  {
+    "name": "engines_blank_point",
+    "before": null,
+    "after": "wrap_executor_around_load_seed"
+  },
+  {
+    "name": "engines_blank_point",
+    "before": null,
+    "after": "wrap_executor_around_load_seed"
+  },
+  {
+    "name": "engines_blank_point",
+    "before": null,
+    "after": "wrap_executor_around_load_seed"
+  },
+  {
+    "name": "engines_blank_point",
+    "before": null,
+    "after": "wrap_executor_around_load_seed"
+  },
+  {
+    "name": "engines_blank_point",
+    "before": null,
+    "after": "wrap_executor_around_load_seed"
+  },
+  {
+    "name": "append_assets_path",
+    "before": null,
+    "after": "engines_blank_point"
+  },
+  {
+    "name": "action_view.logger",
+    "before": null,
+    "after": null
+  },
+  {
+    "name": "action_view.caching",
+    "before": null,
+    "after": "action_view.logger"
+  },
+  {
+    "name": "action_view.setup_action_pack",
+    "before": null,
+    "after": "action_view.caching"
+  },
+  {
+    "name": "action_view.collection_caching",
+    "before": null,
+    "after": "action_controller.set_configs"
+  },
+  {
+    "name": "append_assets_path",
+    "before": null,
+    "after": "engines_blank_point"
+  },
+  {
+    "name": "append_assets_path",
+    "before": null,
+    "after": "engines_blank_point"
+  },
+  {
+    "name": "formtastic.initialize",
+    "before": null,
+    "after": null
+  },
+  {
+    "name": "append_assets_path",
+    "before": null,
+    "after": "engines_blank_point"
+  },
+  {
+    "name": "append_assets_path",
+    "before": null,
+    "after": "engines_blank_point"
+  },
+  {
+    "name": "append_assets_path",
+    "before": null,
+    "after": "engines_blank_point"
+  },
+  {
+    "name": "append_assets_path",
+    "before": null,
+    "after": "engines_blank_point"
+  },
+  {
+    "name": "active_admin.precompile",
+    "before": null,
+    "after": "active_admin.load_app_path"
+  },
+  {
+    "name": "active_admin.routes",
+    "before": null,
+    "after": "active_admin.precompile"
+  },
+  {
+    "name": "append_assets_path",
+    "before": null,
+    "after": "engines_blank_point"
+  },
+  {
+    "name": "devise.url_helpers",
+    "before": null,
+    "after": null
+  },
+  {
+    "name": "devise.omniauth",
+    "before": "build_middleware_stack",
+    "after": "load_config_initializers"
+  },
+  {
+    "name": "devise.secret_key",
+    "before": null,
+    "after": "devise.omniauth"
+  },
+  {
+    "name": "append_assets_path",
+    "before": null,
+    "after": "engines_blank_point"
+  },
+  {
+    "name": "append_assets_path",
+    "before": null,
+    "after": "engines_blank_point"
+  },
+  {
+    "name": "add_generator_templates",
+    "before": null,
+    "after": null
+  },
+  {
+    "name": "ensure_autoload_once_paths_as_subset",
+    "before": null,
+    "after": "add_generator_templates"
+  },
+  {
+    "name": "warn_if_autoloaded",
+    "before": "let_zeitwerk_take_over",
+    "after": "ensure_autoload_once_paths_as_subset"
+  },
+  {
+    "name": "let_zeitwerk_take_over",
+    "before": null,
+    "after": "warn_if_autoloaded"
+  },
+  {
+    "name": "add_builtin_route",
+    "before": null,
+    "after": "let_zeitwerk_take_over"
+  },
+  {
+    "name": "setup_default_session_store",
+    "before": "build_middleware_stack",
+    "after": "add_builtin_route"
+  },
+  {
+    "name": "build_middleware_stack",
+    "before": null,
+    "after": "setup_default_session_store"
+  },
+  {
+    "name": "define_main_app_helper",
+    "before": null,
+    "after": "build_middleware_stack"
+  },
+  {
+    "name": "add_to_prepare_blocks",
+    "before": null,
+    "after": "define_main_app_helper"
+  },
+  {
+    "name": "run_prepare_callbacks",
+    "before": null,
+    "after": "add_to_prepare_blocks"
+  },
+  {
+    "name": "eager_load!",
+    "before": null,
+    "after": "run_prepare_callbacks"
+  },
+  {
+    "name": "finisher_hook",
+    "before": null,
+    "after": "eager_load!"
+  },
+  {
+    "name": "configure_executor_for_concurrency",
+    "before": null,
+    "after": "finisher_hook"
+  },
+  {
+    "name": "set_routes_reloader_hook",
+    "before": null,
+    "after": "configure_executor_for_concurrency"
+  },
+  {
+    "name": "set_clear_dependencies_hook",
+    "before": null,
+    "after": "set_routes_reloader_hook"
+  },
+  {
+    "name": "disable_dependency_loading",
+    "before": null,
+    "after": "set_clear_dependencies_hook"
+  }
+]

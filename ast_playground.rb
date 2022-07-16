@@ -13,7 +13,6 @@ def destructure_ast(ast_node, **hash)
   end
   
   hash
-  [].any?
 end
 
 ast = RubyVM::AbstractSyntaxTree.parse_file("pidgin_spec.rb")

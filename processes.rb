@@ -1,6 +1,15 @@
 rd, wr = IO.pipe
 
 pid1 = fork {
+  trap("INT") {
+    puts "No process #{$$} will continue"
+  }
+
+  trap("INT") {
+    puts "Yes process #{$$} will stop"
+    raise SignalException "INT"
+  }
+
   Thread.new {
     IO.select([rd])
     puts "I don dey go o #{$$}"
@@ -14,9 +23,19 @@ pid1 = fork {
     sleep 1
     puts "I am process #{$$}"
   end
+
 }
 
 pid2 = fork {
+  trap("INT") {
+    puts "No process #{$$} will continue"
+  }
+  
+  trap("INT") {
+    puts "Yes process #{$$} will stop"
+    raise SignalException "INT"
+  }
+
   Thread.new {
     IO.select([rd])
     puts "I don dey go o #{$$}"
@@ -30,6 +49,10 @@ pid2 = fork {
     sleep 1
     puts "I am process #{$$}"
   end
+
+  trap("INT") {
+    puts "No process #{$$} will continue"
+  }
 }
 
 sleep 10
